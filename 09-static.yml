@@ -1,6 +1,6 @@
 ---
 - name: static Page
-  hosts: n1
+  hosts: Centos
   become: yes
 
   tasks:
