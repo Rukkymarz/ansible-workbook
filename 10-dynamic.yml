@@ -1,6 +1,6 @@
 ---
 - name: Dynamic Page
-  hosts: n2
+  hosts: n1
   become: yes
 
   tasks:
