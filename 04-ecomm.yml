@@ -1,10 +1,10 @@
 ---
-- name: Deploy web app
+- name: Deploy ecommerce app
   hosts: n1
   become: yes
 
   tasks:
-  - name: Install GIT
+  - name: Install git
     apt:
       name: git
       state: present
@@ -12,6 +12,6 @@
   - name: Host Code
     git:
       repo: https://github.com/CeeyIT-Solutions/ecomm-3.git
-      dest: /var/www/html
+      dest: /var/www/html/
       force: yes
 ...
