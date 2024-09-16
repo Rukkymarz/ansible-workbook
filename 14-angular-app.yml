@@ -1,0 +1,9 @@
+---
+- name: Deploy angular app
+  hosts: g1
+  become: yes
+
+  roles:
+   - apache
+   - angular
+...
